@@ -4,7 +4,9 @@ import {Link} from 'react-router-dom';
 const Home = () => {
   return (
     <div>
-      <h1>Home Components</h1>
+      <h1 className="text-3xl font-bold underline">
+        Hello world!
+      </h1>
       <Link to='/about'>About</Link>
     </div>
   )
