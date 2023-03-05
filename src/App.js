@@ -9,14 +9,14 @@ import About from './components/About';
 function App() {
   return (
     <div className="App">
-      <Header/>
       <BrowserRouter>
         <Routes>
+          <Header/>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
+          <Footer/>
         </Routes>
       </BrowserRouter>
-      <Footer/>
     </div>
   );
 }
