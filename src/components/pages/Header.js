@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-
-//* import CSS
-import '../layout/header.css'
+import '../layout/header.css';
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -21,13 +19,15 @@ const Header = () => {
     }
   };
 
+  
+
   return (
-    <div className='bg-blue-900'>
-      <nav className={`navber ${stickyClass} `}>
+   
+      <nav className={`navbar ${stickyClass}`}>
         <div className='navbar-two'>
           <div className='navbar-svg'>
-            <i className="fa-solid fa-compass-drafting fa-2x text-orange-500">
-              <a href='/' className='nav-link' >VARA HOME</a>
+            <i className="fa-solid fa-compass-drafting fa-2x text-orange-500 ">
+              <a href='/' className='' >VARA HOME</a>
             </i>
             <button
               className="button-bar"
@@ -69,9 +69,10 @@ const Header = () => {
           </div>
 
         </div>
-      </nav>
-    </div>
-  )
-}
+      </nav> 
+     
+    
+  );
+};
 
-export default Header
+export default Header;

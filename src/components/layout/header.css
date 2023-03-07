@@ -14,10 +14,10 @@
         bg-blue-900 
         mb-3
         z-auto;
-    position: relative;
-    z-index: 999;
-    height: 62px;
-    width: 100%;
+        position: relative;
+        z-index: 999;
+        height: 62px;
+        width: 100%;
 }
 
 .sticky-nav{
@@ -47,6 +47,7 @@
         lg:static 
         lg:block 
         lg:justify-start
+    
 }
 
 .nav-link{
@@ -103,5 +104,7 @@
         leading-snug  
         hover:opacity-75
 }
+
+
 
 @tailwind utilities;

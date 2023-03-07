@@ -15,7 +15,7 @@ const Home = () => {
     return Element.image;
   });
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto -mt-3">
       {/* Banner : ส่วนบน */}
       <div
         className="flex lg:pt-[200px] lg:pb-[200px] bg-blue-100 bg-fixed"
