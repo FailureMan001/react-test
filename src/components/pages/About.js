@@ -102,7 +102,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* FACILITIES */}
+      {/* IMAGE SWIPER */}
       <div className="section bg-blue-200">
         
         <div className="section-title">Facilities</div>
@@ -111,7 +111,7 @@ const About = () => {
         </div>
         <SliderOfAbout/>
       </div>
-      {/* END FACILITIES */}
+      {/* END IMAGE SWIPER */}
 
     </div>
   );
