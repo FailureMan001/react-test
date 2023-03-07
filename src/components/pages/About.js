@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useEffect, useContext } from "react";
 
 // * import : context
 import {ImageContext} from "../ImageContext";
@@ -14,6 +14,12 @@ const About = () => {
   const result = data.imageData.map((Element) => {
     return Element.image;
   });
+
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+  
 
   return (
     <div className="container mx-auto -mt-3">
