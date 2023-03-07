@@ -58,8 +58,8 @@ const Contact = () => {
       <div className="w-full bg-blue-200">
         <div className="flex flex-wrap text-center text-white">
           {/* GOOGLE MAP */}
-          <div className="flex justify-center w-full md:w-1/2 p-5 border-r border-orange-500">
-          <iframe src="https://bit.ly/3ZsUMzq" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div className="flex justify-center w-full md:w-1/2 p-5 border-r border-blue-500">
+          <iframe src="https://bit.ly/3ZsUMzq" className="xl:w-[800px] xl:h-[800px]" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
           {/* LOCATION IAMGE */}
