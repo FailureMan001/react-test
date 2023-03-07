@@ -38,7 +38,7 @@ const About = () => {
           </div>
           {/* About Column */}
           <div className="w-full md:w-1/2 p-5 border-r border-blue-800 md:text-left">
-            <h1 className="my-6 ml-3 text-[90px] font-semibold">โครงสร้างภายใน</h1>
+            <h1 className="my-6 ml-3 text-[90px] font-semibold">SITE</h1>
 
             <p className="p-3 text-gray-900 text-2xl">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
