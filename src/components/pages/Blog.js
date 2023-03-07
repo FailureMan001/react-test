@@ -29,7 +29,7 @@ const Blog = () => {
             <div className="rounded overflow-hidden shadow-lg">
               <Link
                 to="/blog-01"
-                onClick={() => window.reload()}
+                
                 className="card-zoom"
               >
                 <img
@@ -40,7 +40,7 @@ const Blog = () => {
               </Link>
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer">
-                  <Link to="/blog-01" onClick={() => window.reload()}>
+                  <Link to="/blog-01" >
                     Luxury Room
                   </Link>
                 </div>
@@ -52,7 +52,7 @@ const Blog = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <span className="inline-block hover:-mt-1 bg-orange-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
-                  <Link to="/blog-02" onClick={() => window.reload()}>
+                  <Link to="/blog-02" >
                     READ MORE
                   </Link>
                 </span>
@@ -62,7 +62,7 @@ const Blog = () => {
             <div className="rounded overflow-hidden shadow-lg">
               <Link
                 to="/blog-02"
-                onClick={() => window.reload()}
+                
                 className="card-zoom"
               >
                 <img
@@ -73,7 +73,7 @@ const Blog = () => {
               </Link>
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer">
-                  <Link to="/blog-02" onClick={() => window.reload()}>
+                  <Link to="/blog-02" >
                     Kitchen Room
                   </Link>
                 </div>
@@ -85,7 +85,7 @@ const Blog = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <span className="inline-block hover:-mt-1 bg-orange-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
-                  <Link to="/blog-02" onClick={() => window.reload()}>
+                  <Link to="/blog-02" >
                     READ MORE
                   </Link>
                 </span>
@@ -95,7 +95,7 @@ const Blog = () => {
             <div className="rounded overflow-hidden shadow-lg">
               <Link
                 to="/blog-03"
-                onClick={() => window.reload()}
+                
                 className="card-zoom"
               >
                 <img
@@ -106,7 +106,7 @@ const Blog = () => {
               </Link>
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer">
-                  <Link to="/blog-03" onClick={() => window.reload()}>
+                  <Link to="/blog-03" >
                     Minimal room
                   </Link>
                 </div>
@@ -118,7 +118,7 @@ const Blog = () => {
               </div>
               <div className="px-6 pt-4 pb-2">
                 <span className="inline-block hover:-mt-1 bg-orange-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
-                  <Link to="/blog-03" onClick={() => window.reload()}>
+                  <Link to="/blog-03" >
                     READ MORE
                   </Link>
                 </span>

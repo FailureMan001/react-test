@@ -47,22 +47,22 @@ const Header = () => {
           >
             <ul className='ul-main'>
               <li className='nav-item'>
-                <Link to='/' onClick={()=>window.reload()} className='li-link'>
+                <Link to='/' className='li-link'>
                   <span className='ml-2'>HOME</span>
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/about' onClick={()=>window.reload()} className='li-link'>
+                <Link to='/about' className='li-link'>
                   <span className='ml-2'>ABOUT US</span>
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/blog' onClick={()=>window.reload()} className='li-link'>
+                <Link to='/blog' className='li-link'>
                   <span className='ml-2'>BLOG</span>
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/contact' onClick={()=>window.reload()} className='li-link'>
+                <Link to='/contact' className='li-link'>
                   <span className='ml-2'>CONTACT US</span>
                 </Link>
               </li>
