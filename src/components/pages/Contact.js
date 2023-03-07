@@ -1,5 +1,4 @@
 import React, { useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
 
 // * import : context
 import { ImageContext } from "../ImageContext";
@@ -17,7 +16,7 @@ const Contact = () => {
     // 👇️ scroll to top on page load
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
-  
+
   return (
     <div>Contact</div>
   )
