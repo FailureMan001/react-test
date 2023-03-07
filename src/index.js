@@ -6,11 +6,15 @@ import reportWebVitals from './reportWebVitals';
 
 import ImageContextProvider from './components/ImageContext';
 
+import {BrowserRouter} from 'react-router-dom'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ImageContextProvider>
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </ImageContextProvider>
 );

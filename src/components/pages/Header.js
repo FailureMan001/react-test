@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from 'react-router-dom'
 
 import '../layout/header.css';
 
@@ -46,24 +47,24 @@ const Header = () => {
           >
             <ul className='ul-main'>
               <li className='nav-item'>
-                <a href='/' className='li-link'>
+                <Link to='/' className='li-link'>
                   <span className='ml-2'>HOME</span>
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a href='/about' className='li-link'>
+                <Link to='/about' className='li-link'>
                   <span className='ml-2'>ABOUT US</span>
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a href='/blog' className='li-link'>
+                <Link to='/blog' className='li-link'>
                   <span className='ml-2'>BLOG</span>
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a href='/contact' className='li-link'>
+                <Link to='/contact' className='li-link'>
                   <span className='ml-2'>CONTACT US</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
