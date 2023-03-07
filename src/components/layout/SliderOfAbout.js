@@ -11,8 +11,6 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
-import "./sliderTwo.css";
-
 // import required modules
 import { EffectCube, Pagination } from "swiper";
 
@@ -35,7 +33,7 @@ const SliderOfAbout = () => {
         }}
         pagination={true}
         modules={[EffectCube, Pagination]}
-        className="mySwiper"
+        className="mySwiper xl:w-[50%]"
       >
         <SwiperSlide>
           <img src={result[14]} alt=''/>
