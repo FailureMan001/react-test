@@ -7,7 +7,7 @@ import { ImageContext } from "../ImageContext";
 import Slider from "../layout/Slider";
 
 //* import : CSS
-import '../layout/home.css'
+import "../layout/home.css";
 
 const Home = () => {
   const data = useContext(ImageContext);
@@ -43,8 +43,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>{/* END Banner : ส่วนบน */}
-
+      </div>
+      {/* END Banner : ส่วนบน */}
 
       {/* OUR PROJECT */}
       <div className="section bg-blue-100">
@@ -66,19 +66,90 @@ const Home = () => {
             <p className="font-link card-title">2 ที่จอดรถ</p>
           </div>
         </div>
-      </div>{/* END OUR PROJECT */}
+      </div>
+      {/* END OUR PROJECT */}
 
       {/* OUR PROJECT : 01 */}
-      <div className='section bg-blue-200'>
-        <div className='section-title'>OUR PROJECT : 01</div>
-        <div className='section-subtitle'>Exlore our rich and diverse portfolioExlore our rich and diverse portfolioExlore our rich and diverse portfolio</div>
-      </div>{/* END OUR PROJECT : 01 */}
+      <div className="section bg-blue-200">
+        <div className="section-title">OUR PROJECT : 01</div>
+        <div className="section-subtitle">
+          Exlore our rich and diverse portfolioExlore our rich and diverse
+          portfolioExlore our rich and diverse portfolio
+        </div>
+      </div>
+      {/* END OUR PROJECT : 01 */}
 
       {/* OUR PROJECT : 02 OF IMAGES*/}
-      <div className='section bg-blue-200'>
+      <div className="section bg-blue-200">
         <Slider />
-      </div>{/* END OUR PROJECT : 02 OF IMAGES*/}
+      </div>
+      {/* END OUR PROJECT : 02 OF IMAGES*/}
 
+      {/* OUR PROJECT : 03 PAGES */}
+      <div className="section bg-blue-100">
+        <div className="flex flex-wrap text-center text-white">
+          <div className="w-full md:w-1/3 p-5">
+            <div
+              className="w-full h-[350px] object-cover drop-shadow-2xl"
+              style={{
+                backgroundImage: `url(${result[8]})`,
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
+          </div>
+          <div className="w-full md:w-1/3 p-5  md:text-left">
+            <p className="p-3 text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+              dolor.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Earum, dolor.Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Earum, dolor.
+            </p>
+          </div>
+          <div className="w-full md:w-1/3 p-5  md:text-left">
+            <p className="p-3 text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+              dolor.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Earum, dolor.Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Earum, dolor.Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Earum, dolor.Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Earum, dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* END OUR PROJECT : 03 PAGES */}
+
+      {/* FACILITIES */}
+      <div className="section bg-blue-200">
+        <div className="section-title">Facilities</div>
+        <div className="section-subtitle">
+          Exlore our rich and diverse portfolio
+        </div>
+        <div className="flex justify-center flex-wrap">
+          <div className="card-Facilities">
+            <img src={result[23]} className="card-image " alt="" />
+            <p className="card-Facilitie">MM</p>
+            <p className="card-Facilitie-sub">UI Design</p>
+          </div>
+
+          <div className="card-Facilities">
+            <img src={result[22]} className="card-image " alt="" />
+            <p className="card-Facilitie">MM</p>
+            <p className="card-Facilitie-sub">UI Design</p>
+          </div>
+          <div className="card-Facilities">
+            <img src={result[24]} className="card-image " alt="" />
+            <p className="card-Facilitie">MM</p>
+            <p className="card-Facilitie-sub">UI Design</p>
+          </div>
+          <div className="card-Facilities">
+            <img src={result[21]} className="card-image " alt="" />
+            <p className="card-Facilitie">MM</p>
+            <p className="card-Facilitie-sub">UI Design</p>
+          </div>
+        </div>
+      </div>
+      {/* END FACILITIES */}
     </div>
   );
 };
