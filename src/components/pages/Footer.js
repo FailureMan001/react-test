@@ -24,7 +24,7 @@ const Footer = () => {
           {/* GOOGLE MAP */}
           <div className="flex items-center justify-center">
             <iframe
-              src="https://bit.ly/3ZsUMzq"
+              src="https://bit.ly/3L4W7rB"
               className="xl:w-[500px] xl:h-[420px]"
               style={{ border: 0 }}
               allowFullScreen=""
