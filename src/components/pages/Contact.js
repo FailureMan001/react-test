@@ -54,22 +54,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* BOX ONE*/}
-      <div className="w-full bg-blue-200">
-        <div className="flex flex-wrap text-center text-white">
-          {/* GOOGLE MAP */}
-          <div className="flex justify-center w-full md:w-1/2 p-5 border-r border-blue-500">
-          <iframe src="https://bit.ly/3ZsUMzq" className="xl:w-[800px] xl:h-[800px]" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-
-          {/* LOCATION IAMGE */}
-          <div className="flex justify-center w-full md:w-1/2 p-5 border-r border-orange-500">
-          <img src={result[17]} alt="" />
-          </div>
-        </div>
-      </div>
-
-      {/* BOX TWO*/}
+      {/* BOX*/}
       <div className="w-full bg-blue-200">
         <div className="flex flex-wrap text-center text-white">
           {/* LOCATION IAMGE */}
