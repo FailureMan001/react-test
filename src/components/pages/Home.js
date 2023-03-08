@@ -158,16 +158,6 @@ const Home = () => {
       </div>
       {/* END FACILITIES */}
 
-      {/* LOCATION US */}
-      <div className="section bg-blue-100">
-        <div className="section-title">LOCATION US</div>
-        <div className="section-subtitle">
-          Exlore our rich and diverse portfolioExlore our rich and diverse
-          portfolioExlore our rich and diverse portfolioExlore our rich and
-          diverse portfolioExlore our rich and diverse portfolio
-        </div>
-      </div>
-
       {/* BOX*/}
       <div className="w-full bg-blue-200">
         <div className="flex flex-wrap text-center text-white">
