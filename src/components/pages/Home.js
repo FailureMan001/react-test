@@ -16,10 +16,10 @@ const Home = () => {
     return Element.image;
   });
   
-  // useEffect(() => {
-  //   // 👇️ scroll to top on page load
-  //   window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  // }, []);
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
   
   return (
     <div className="container mx-auto -mt-3 ">
@@ -143,39 +143,39 @@ const Home = () => {
             <div className="p-3 text-gray-500">
               <ul className="text-2xl">
                 <li className="flex flex-row pb-6">
-                  <span className="text-4xl"><i class="fas fa-coins"></i></span>
+                  <span className="text-4xl"><i className="fas fa-coins"></i></span>
                   <span className="pl-4">ฟรีค่าโอนตามราคาบ้าน</span>
                 </li>
                 <li className="flex flex-row">
-                  <span className="text-4xl"><i class="fas fa-percentage"></i></span>
+                  <span className="text-4xl"><i className="fas fa-percentage"></i></span>
                   <span className="pl-4">ฟรีค่าภาษีตามราคาบ้าน</span>
                 </li>
                 <li className="flex flex-row">
-                  <span className="text-4xl"><i class="fas fa-file-invoice-dollar"></i></span>
+                  <span className="text-4xl"><i className="fas fa-file-invoice-dollar"></i></span>
                   <span className="pl-4">ฟรีค่าจดจำนอง</span>
                 </li>
                 <li>
-                  <span className="text-4xl"><i class="fa-solid fa-shower"></i></span>
+                  <span className="text-4xl"><i className="fa-solid fa-shower"></i></span>
                   <span className="pl-4">ฟรีเครื่องทำน้ำอุ่น 2 ตัว</span>
                 </li>
                 <li>
-                  <span className="text-4xl"><i class="fa-solid fa-car-side"></i></span>
+                  <span className="text-4xl"><i className="fa-solid fa-car-side"></i></span>
                   <span className="pl-3">ฟรีปูกระเบื้องโรงจอดรถ</span>
                 </li>
                 <li>
-                  <span className="text-4xl"><i class="fa-solid fa-kitchen-set"></i></span>
+                  <span className="text-4xl"><i className="fa-solid fa-kitchen-set"></i></span>
                   <span className="pl-3">ฟรีก่อซิงค์ครัวพร้อมปูกระเบื้อง</span>
                 </li>
                 <li>
-                  <span className="text-4xl"><i class="fa-solid fa-bolt"></i></span>
+                  <span className="text-4xl"><i className="fa-solid fa-bolt"></i></span>
                   <span className="pl-7">ฟรีมิเตอร์ไฟฟ้า</span>
                 </li>
                 <li>
-                  <span className="text-4xl"><i class="fa-solid fa-droplet"></i></span>
+                  <span className="text-4xl"><i className="fa-solid fa-droplet"></i></span>
                   <span className="pl-7">ฟรีมิเตอร์น้ำ</span>
                 </li>
                 <li>
-                  <span className="text-4xl"><i class="fa-solid fa-magnifying-glass"></i></span>
+                  <span className="text-4xl"><i className="fa-solid fa-magnifying-glass"></i></span>
                   <span className="pl-5">ฟรีค่าประเมิน</span>
                 </li>
               </ul>
