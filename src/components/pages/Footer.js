@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="flex flex-wrap text-center text-white">
         <div className="w-full p-6 bg-blue-900">
           <div className="w-48 mx-auto pt-6 border-b-2 border-orange-500 text-center text-2xl text-white">
-            LOCATION US
+            CONTACT US
           </div>
         </div>
         {/* <!-- ABOUT COLUMN --> */}
@@ -42,16 +42,17 @@ const Footer = () => {
 
         {/* <!-- FORM COLUMN --> */}
         <div className="w-full md:w-1/3 p-5">
-          <div className="my-6 ml-3 text-xl font-semibold">VARA HOME</div>
+          <div className="my-6 ml-3 text-xl font-semibold">SALES MANAGER</div>
           <p className="mt-8 text-gray-400 text-xl">
-            Rambuttre Street
+            ติดต่อสอบถาม
             <br />
-            Bangkok, BK 5555 <br />
-            Thailand
+            ผู้จัดการฝายขาย
             <br />
-            <strong>Phone:</strong> +66 11 111 1111
+            <strong>Phone:</strong> 084-730-1915 คุณอะตอม
             <br />
-            <strong>Email:</strong> info@gmail.com
+            <strong>Phone:</strong> 095-162-4939 คุณวดี
+            <br />
+            <strong>LINE:</strong> @150LTBLN
           </p>
         </div>
       </div>

@@ -7,6 +7,9 @@ import { ImageContext } from "../ImageContext";
 //* import : image zoom CSS
 import "../layout/blog.css";
 
+// *import : Slider Of About
+import SliderOfBlogThree from '../layout/SliderOfBlogThree';
+
 const BlogThree = () => {
   const data = useContext(ImageContext)
   const result = data.imageData.map((e)=>{
@@ -26,7 +29,7 @@ const BlogThree = () => {
           Exlore our rich and diverse portfolio
         </div>
         <div className="flex items-center justify-center bg-blue-100">
-          <img src={result[20]} alt="" className="shadow-xl" />
+          <SliderOfBlogThree/>
         </div>
 
         <div className="">

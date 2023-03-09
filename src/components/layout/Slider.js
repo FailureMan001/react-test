@@ -18,7 +18,6 @@ import { ImageContext } from '../ImageContext';
 
 const Slider = () => {
     const data = useContext(ImageContext)
-
     const result = data.imageData.map((e) => {
         return e.image
     })

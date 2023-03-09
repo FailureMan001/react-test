@@ -41,7 +41,7 @@ const About = () => {
             <h1 className="my-6 ml-3 text-[90px] font-semibold">SITE</h1>
 
             <p className="p-3 text-gray-900 text-2xl">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
               dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Earum, dolor.Lorem ipsum dolor sit amet consectetur, adipisicing
               elit. Earum, dolor.Lorem ipsum dolor sit amet consectetur,

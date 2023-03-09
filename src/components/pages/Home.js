@@ -16,13 +16,13 @@ const Home = () => {
     return Element.image;
   });
   
-  useEffect(() => {
-    // 👇️ scroll to top on page load
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  }, []);
+  // useEffect(() => {
+  //   // 👇️ scroll to top on page load
+  //   window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  // }, []);
   
   return (
-    <div className="container mx-auto -mt-3">
+    <div className="container mx-auto -mt-3 ">
       {/* Banner : ส่วนบน */}
       <div
         className="flex lg:pt-[200px] lg:pb-[200px] bg-blue-100 bg-fixed"
@@ -55,13 +55,13 @@ const Home = () => {
 
       {/* OUR PROJECT */}
       <div className="section bg-blue-100">
-        <div className="section-title">OUR PROJECT</div>
+        <div className="section-title">โครงการของเรา</div>
         <div className="section-subtitle">
-          Exlore our rich and diverse portfolio
+        พื้นที่ที่ท่านต้องการครบจบที่นี่
         </div>
         <div className="flex justify-center flex-wrap">
           <div className="card">
-            <p className="font-link card-title">57 - 100 ตรว</p>
+            <p className="font-link card-title">57 - 100 ตรว.</p>
           </div>
           <div className="card">
             <p className="font-link card-title">3 ห้องนอน</p>
@@ -78,10 +78,9 @@ const Home = () => {
 
       {/* OUR PROJECT : 01 */}
       <div className="section bg-blue-200">
-        <div className="section-title">OUR PROJECT : 01</div>
+        <div className="section-title">โครงการบ้านสวย</div>
         <div className="section-subtitle">
-          Exlore our rich and diverse portfolioExlore our rich and diverse
-          portfolioExlore our rich and diverse portfolio
+          ทำเลสงบ สิ่งแวดล้อมดี เดินทางสะดวก บ้านเดี่ยวชั้นเดียว เนื้อที่เริ่มต้น 60 ตรว. ตั้งติดถนนใหญ่ นิคมพัฒนา ซอย 7 สาย 13 - 15
         </div>
       </div>
       {/* END OUR PROJECT : 01 */}
@@ -94,33 +93,93 @@ const Home = () => {
 
       {/* OUR PROJECT : 03 PAGES */}
       <div className="section bg-blue-100">
+      <div className="section-title">PROMOTION</div>
+        <div className="section-subtitle">
+          โปรโมชั่นสำหรับลูกค้าสุดพิเศษที่นี่ที่เดียวเท่านั้น
+        </div>
         <div className="flex flex-wrap text-center text-white">
+        
           <div className="w-full md:w-1/3 p-5">
             <div
               className="w-full h-[350px] object-cover drop-shadow-2xl"
               style={{
                 backgroundImage: `url(${result[8]})`,
                 backgroundRepeat: "no-repeat",
+                backgroundSize:"370px 370px",
               }}
             ></div>
           </div>
           <div className="w-full md:w-1/3 p-5  md:text-left">
-            <p className="p-3 text-gray-500">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
-              dolor.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Earum, dolor.Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Earum, dolor.
-            </p>
+            <div className="p-3 text-gray-500 text-xl leading-relaxed">
+
+            <p className="">แลนด์มาร์คของโครงการพร็อพเพอร์ตี้ พร้อมของแถม มากมายสำหรับบ้านเดี่ยวเนื้อที่เริ่มต้นที่ 60 ตารางวา 3 ห้องนอน 2 ห้องน้ำ 1 ห้องโถงพร้อมที่จอดรถ</p>
+            <br/>
+            <p className="">โครงการที่ไม่สร้างฝันเพราะที่นี่เราทำให้เป็นจริงบ้านที่ทำเลดีเหมาะสมกับราคาสิ่งแวดล้อมดีเดินทางสะดวกอยู่ใกล้จุดบริการทุกอย่าง เช่น</p>
+            <p></p>
+            <ul>
+              <li className="grid grid-flow-col auto-cols-max">
+                <span><i className="fa-sharp fa-solid fa-school-circle-check"/></span>
+                <span className="pl-3">โรงเรียน</span>
+                <span className="pl-10"><i className="fa-solid fa-graduation-cap" /></span>
+                <span className="pl-3">มหาวิทยาลัย</span>
+              </li>
+              <li className="grid grid-flow-col auto-cols-max">
+                <span className=""><i className="fa-solid fa-house-medical-circle-check" /></span>
+                <span className="pl-3">โรงพยาบาล</span>
+                <span className="pl-3"><i className="fa-solid fa-building-shield" /></span>
+                <span className="pl-3">สถานีตำรวจ</span>
+              </li>
+              <li className="flex items-center">
+                <span><i className="fa-sharp fa-solid fa-store" /></span>
+                <span className="pl-3">ตลาดสด บิ๊กซี โลตัสใหญ่</span>
+              </li>
+            </ul>
+            <br/>
+            <p>ไม่สร้างฝันเพราะมีจริงสามารถดูบ้านได้หากท่านต้องการชมบ้านสามารถติดต่อผู้จัดการฝ่ายขายได้ทุกท่าน</p>
+            </div>
           </div>
+
           <div className="w-full md:w-1/3 p-5  md:text-left">
-            <p className="p-3 text-gray-500">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
-              dolor.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Earum, dolor.Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Earum, dolor.Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Earum, dolor.Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Earum, dolor.
-            </p>
+            <div className="p-3 text-gray-500">
+              <ul className="text-2xl">
+                <li className="flex flex-row pb-6">
+                  <span className="text-4xl"><i class="fas fa-coins"></i></span>
+                  <span className="pl-4">ฟรีค่าโอนตามราคาบ้าน</span>
+                </li>
+                <li className="flex flex-row">
+                  <span className="text-4xl"><i class="fas fa-percentage"></i></span>
+                  <span className="pl-4">ฟรีค่าภาษีตามราคาบ้าน</span>
+                </li>
+                <li className="flex flex-row">
+                  <span className="text-4xl"><i class="fas fa-file-invoice-dollar"></i></span>
+                  <span className="pl-4">ฟรีค่าจดจำนอง</span>
+                </li>
+                <li>
+                  <span className="text-4xl"><i class="fa-solid fa-shower"></i></span>
+                  <span className="pl-4">ฟรีเครื่องทำน้ำอุ่น 2 ตัว</span>
+                </li>
+                <li>
+                  <span className="text-4xl"><i class="fa-solid fa-car-side"></i></span>
+                  <span className="pl-3">ฟรีปูกระเบื้องโรงจอดรถ</span>
+                </li>
+                <li>
+                  <span className="text-4xl"><i class="fa-solid fa-kitchen-set"></i></span>
+                  <span className="pl-3">ฟรีก่อซิงค์ครัวพร้อมปูกระเบื้อง</span>
+                </li>
+                <li>
+                  <span className="text-4xl"><i class="fa-solid fa-bolt"></i></span>
+                  <span className="pl-7">ฟรีมิเตอร์ไฟฟ้า</span>
+                </li>
+                <li>
+                  <span className="text-4xl"><i class="fa-solid fa-droplet"></i></span>
+                  <span className="pl-7">ฟรีมิเตอร์น้ำ</span>
+                </li>
+                <li>
+                  <span className="text-4xl"><i class="fa-solid fa-magnifying-glass"></i></span>
+                  <span className="pl-5">ฟรีค่าประเมิน</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
