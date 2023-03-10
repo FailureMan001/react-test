@@ -22,8 +22,8 @@ const Blog = () => {
     <div className="container mx-auto -mt-3">
       <div className="section bg-blue-100">
         <div className="section-title">BLOG</div>
-        <div className="section-subtitle">
-          Exlore our rich and diverse portfolio
+        <div className="section-subtitle text-xl">
+          ดูรายละเอียดของบ้านทั้งหมดได้ที่นี่
         </div>
       </div>
       {/*  */}
@@ -34,7 +34,6 @@ const Blog = () => {
             <div className="rounded overflow-hidden shadow-lg">
               <Link
                 to="/blog-01"
-                
                 className="card-zoom"
               >
                 <img
@@ -46,14 +45,14 @@ const Blog = () => {
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer">
                   <Link to="/blog-01" >
-                    Luxury Room
+                    วราโฮมวิลล์
                   </Link>
                 </div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, Nonea! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
+                <div className="text-gray-700 text-base">
+                  <span>โครงการวราโฮมวิลล์ นิคมพัฒนา - ระยอง</span>
+                  <span>พร้อมจบครับปัญหาครอบครัว ใส่ใจทุกรายละเอียดในการก่อสร้าง</span>
+                  <span>ทำเลทองเหมาะแก่การเดินทาง ตัวบ้านหรูหราไม่แพ้ใคร</span>
+                </div>
               </div>
               <div className="px-6 pt-4 pb-2">
                 <span className="inline-block hover:-mt-1 bg-orange-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
@@ -79,14 +78,14 @@ const Blog = () => {
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer">
                   <Link to="/blog-02" >
-                    Kitchen Room
+                    ธรรมชาติ
                   </Link>
                 </div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, Nonea! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
+                <div className="text-gray-700 text-base">
+                  <span>ชมวิวตัวบ้านจากภาพมุมสูง บรรยากาศดี ไม่สร้างฝัน</span>
+                  <span>พักผ่อนสบายพร้อมออกเดินทางใกล้สถานที่ทุกจุดบริการ</span>
+                  <span>และที่ทำงาน</span>
+                </div>
               </div>
               <div className="px-6 pt-4 pb-2">
                 <span className="inline-block hover:-mt-1 bg-orange-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
@@ -112,14 +111,14 @@ const Blog = () => {
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer">
                   <Link to="/blog-03" >
-                    Minimal room
+                    การก่อสร้าง
                   </Link>
                 </div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, Nonea! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
+                <div className="text-gray-700 text-base">
+                  <span>รายละเอียดที่อยากให้ท่านชมว่า วราโฮมวิลล์ของเรา</span>
+                  <span>ใส่ใจและลงรายละเอียดของการสร้างมากพอที่</span>
+                  <span> จะอยู่ได้โดยไม่มีปัญหามากวนใจ</span>
+                </div>
               </div>
               <div className="px-6 pt-4 pb-2">
                 <span className="inline-block hover:-mt-1 bg-orange-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">

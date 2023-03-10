@@ -66,20 +66,20 @@ const Home = () => {
         </div>
         <div className="flex justify-center flex-wrap">
           <div className="card">
-            <i class="fa-solid fa-house-chimney-user text-5xl  text-orange-500"></i>
+            <i className="fa-solid fa-house-chimney-user text-5xl  text-orange-500"></i>
             <div className="font-link card-title">57 - 100 ตรว.</div>
           </div>
           <div className="card">
-          <i class="fa-solid fa-bed text-5xl  text-orange-500"></i>
+          <i className="fa-solid fa-bed text-5xl  text-orange-500"></i>
             <p className="font-link card-title">3 ห้องนอน</p>
           </div>
           <div className="card">
-          <i class="fa-solid fa-bath text-5xl  text-orange-500"></i>
+          <i className="fa-solid fa-bath text-5xl  text-orange-500"></i>
             <p className="font-link card-title">2 ห้องน้ำ</p>
           </div>
           <div className="card">
-          <i class="fa-solid fa-square-parking text-5xl  text-orange-500"></i>
-          <i class="fa-solid fa-garage-car"></i>
+          <i className="fa-solid fa-square-parking text-5xl  text-orange-500"></i>
+          <i className="fa-solid fa-garage-car"></i>
             <p className="font-link card-title">2 ที่จอดรถ</p>
           </div>
         </div>
