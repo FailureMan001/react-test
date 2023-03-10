@@ -6,6 +6,8 @@ import {
   insideData,
   toiletData,
   viewData,
+  homeData,
+  salesData,
 } from "../Data";
 
 export const ImageContext = createContext();
@@ -18,6 +20,8 @@ const ImageContextProvider = ({ children }) => {
         insideData,
         toiletData,
         viewData,
+        homeData,
+        salesData,
       }}
     >
       {children}

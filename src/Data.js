@@ -104,6 +104,14 @@ import view08 from './assets/image/view08.jpg';
 import view09 from './assets/image/view09.jpg';
 import view10 from './assets/image/view10.jpg';
 
+// Background : home
+import home01 from './assets/image/home01.jpg';
+import home02 from './assets/image/home02.jpg';
+import home03 from './assets/image/home03.jpg';
+import home04 from './assets/image/home04.jpg';
+
+// Background : sales manager
+import sales01 from './assets/image/saler01.jpg'
 
 export const imageData = [
     {
@@ -291,4 +299,15 @@ export const viewData = [
     {id:8, image:view08},
     {id:9, image:view09},
     {id:10, image:view10},
+]
+
+export const homeData = [
+    {id:1, image:home01},
+    {id:2, image:home02},
+    {id:3, image:home03},
+    {id:4, image:home04},
+]
+
+export const salesData = [
+    {id:1, image:sales01},
 ]

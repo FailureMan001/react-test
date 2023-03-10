@@ -6,7 +6,11 @@ import { ImageContext } from "../ImageContext";
 
 const Footer = () => {
   const data = useContext(ImageContext);
+  const saleDatas = useContext(ImageContext);
   const result = data.imageData.map((Element) => {
+    return Element.image;
+  });
+  const resultTwo = saleDatas.salesData.map((Element) => {
     return Element.image;
   });
 
@@ -24,7 +28,7 @@ const Footer = () => {
           {/* GOOGLE MAP */}
           <div className="flex items-center justify-center">
             <iframe
-              src="https://bit.ly/3L4W7rB"
+              src="https://bit.ly/3Fc8X3w"
               className="xl:w-[500px] xl:h-[420px]"
               style={{ border: 0 }}
               allowFullScreen=""
@@ -43,7 +47,7 @@ const Footer = () => {
         {/* <!-- FORM COLUMN --> */}
         <div className="w-full md:w-1/3 p-5">
           <div className="my-6 ml-3 text-xl font-semibold">SALES MANAGER</div>
-          <p className="mt-8 text-gray-400 text-xl">
+          <div className="mt-8 text-gray-400 text-xl">
             ติดต่อสอบถาม
             <br />
             ผู้จัดการฝายขาย
@@ -53,7 +57,13 @@ const Footer = () => {
             <strong>Phone:</strong> 095-162-4939 คุณวดี
             <br />
             <strong>LINE:</strong> @150LTBLN
-          </p>
+          </div>
+          <div className="flex items-center justify-center pt-5 relative">
+            <div className="flex items-center justify-center w-[250px] h-[250px] bg-blue-300 rounded-full">
+              <img src={resultTwo[0]} className='mx-auto w-[240px] h-[240px] object-cover rounded-full' alt="sales manager"/>
+            </div>
+            <div className="absolute bottom-0 bg-blue-300 py-2 px-14 rounded-lg text-white text-md">ผู้จัดการฝายขาย</div>
+          </div>
         </div>
       </div>
     </div>

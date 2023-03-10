@@ -12,9 +12,14 @@ import "../layout/home.css";
 
 const Home = () => {
   const data = useContext(ImageContext);
+  const homeImg = useContext(ImageContext)
   const result = data.imageData.map((Element) => {
     return Element.image;
   });
+
+  const resultTwo = homeImg.homeData.map((Element)=>{
+    return Element.image
+  })
   
   useEffect(() => {
     // 👇️ scroll to top on page load
@@ -56,59 +61,65 @@ const Home = () => {
       {/* OUR PROJECT */}
       <div className="section bg-blue-100">
         <div className="section-title">โครงการของเรา</div>
-        <div className="section-subtitle">
+        <div className="section-subtitle text-xl">
         พื้นที่ที่ท่านต้องการครบจบที่นี่
         </div>
         <div className="flex justify-center flex-wrap">
           <div className="card">
-            <p className="font-link card-title">57 - 100 ตรว.</p>
+            <i class="fa-solid fa-house-chimney-user text-5xl  text-orange-500"></i>
+            <div className="font-link card-title">57 - 100 ตรว.</div>
           </div>
           <div className="card">
+          <i class="fa-solid fa-bed text-5xl  text-orange-500"></i>
             <p className="font-link card-title">3 ห้องนอน</p>
           </div>
           <div className="card">
+          <i class="fa-solid fa-bath text-5xl  text-orange-500"></i>
             <p className="font-link card-title">2 ห้องน้ำ</p>
           </div>
           <div className="card">
+          <i class="fa-solid fa-square-parking text-5xl  text-orange-500"></i>
+          <i class="fa-solid fa-garage-car"></i>
             <p className="font-link card-title">2 ที่จอดรถ</p>
           </div>
         </div>
       </div>
       {/* END OUR PROJECT */}
 
-      {/* OUR PROJECT : 01 */}
+      {/* โครงการบ้านสวย */}
       <div className="section bg-blue-200">
         <div className="section-title">โครงการบ้านสวย</div>
-        <div className="section-subtitle">
+        <div className="section-subtitle text-xl">
           ทำเลสงบ สิ่งแวดล้อมดี เดินทางสะดวก บ้านเดี่ยวชั้นเดียว เนื้อที่เริ่มต้น 60 ตรว. ตั้งติดถนนใหญ่ นิคมพัฒนา ซอย 7 สาย 13 - 15
         </div>
       </div>
-      {/* END OUR PROJECT : 01 */}
+      
 
-      {/* OUR PROJECT : 02 OF IMAGES*/}
+      
       <div className="section bg-blue-200">
         <Slider />
       </div>
-      {/* END OUR PROJECT : 02 OF IMAGES*/}
+      {/* END โครงการบ้านสวย*/}
 
-      {/* OUR PROJECT : 03 PAGES */}
+      {/* PROMOTION : IMAGE */}
       <div className="section bg-blue-100">
       <div className="section-title">PROMOTION</div>
-        <div className="section-subtitle">
+        <div className="section-subtitle text-xl">
           โปรโมชั่นสำหรับลูกค้าสุดพิเศษที่นี่ที่เดียวเท่านั้น
         </div>
         <div className="flex flex-wrap text-center text-white">
         
           <div className="w-full md:w-1/3 p-5">
             <div
-              className="w-full h-[350px] object-cover drop-shadow-2xl"
+              className="w-full h-[450px] object-cover drop-shadow-2xl"
               style={{
-                backgroundImage: `url(${result[8]})`,
+                backgroundImage: `url(${resultTwo[1]})`,
                 backgroundRepeat: "no-repeat",
-                backgroundSize:"370px 370px",
+                backgroundSize:"380px 450px",
               }}
             ></div>
           </div>
+          {/* PROMOTION : 01 */}
           <div className="w-full md:w-1/3 p-5  md:text-left">
             <div className="p-3 text-gray-500 text-xl leading-relaxed">
 
@@ -118,19 +129,19 @@ const Home = () => {
             <p></p>
             <ul>
               <li className="grid grid-flow-col auto-cols-max">
-                <span><i className="fa-sharp fa-solid fa-school-circle-check"/></span>
+                <span><i className="fa-sharp fa-solid fa-school-circle-check text-orange-500"/></span>
                 <span className="pl-3">โรงเรียน</span>
-                <span className="pl-10"><i className="fa-solid fa-graduation-cap" /></span>
+                <span className="pl-10"><i className="fa-solid fa-graduation-cap text-orange-500" /></span>
                 <span className="pl-3">มหาวิทยาลัย</span>
               </li>
               <li className="grid grid-flow-col auto-cols-max">
-                <span className=""><i className="fa-solid fa-house-medical-circle-check" /></span>
+                <span className=""><i className="fa-solid fa-house-medical-circle-check text-orange-500" /></span>
                 <span className="pl-3">โรงพยาบาล</span>
-                <span className="pl-3"><i className="fa-solid fa-building-shield" /></span>
+                <span className="pl-3"><i className="fa-solid fa-building-shield text-orange-500" /></span>
                 <span className="pl-3">สถานีตำรวจ</span>
               </li>
               <li className="flex items-center">
-                <span><i className="fa-sharp fa-solid fa-store" /></span>
+                <span><i className="fa-sharp fa-solid fa-store text-orange-500" /></span>
                 <span className="pl-3">ตลาดสด บิ๊กซี โลตัสใหญ่</span>
               </li>
             </ul>
@@ -138,45 +149,72 @@ const Home = () => {
             <p>ไม่สร้างฝันเพราะมีจริงสามารถดูบ้านได้หากท่านต้องการชมบ้านสามารถติดต่อผู้จัดการฝ่ายขายได้ทุกท่าน</p>
             </div>
           </div>
-
+          {/* PROMOTION : 02 */}
           <div className="w-full md:w-1/3 p-5  md:text-left">
             <div className="p-3 text-gray-500">
               <ul className="text-2xl">
-                <li className="flex flex-row pb-6">
-                  <span className="text-4xl"><i className="fas fa-coins"></i></span>
-                  <span className="pl-4">ฟรีค่าโอนตามราคาบ้าน</span>
+                <li className="flex flex-row pb-3">
+                  <span className="text-4xl"><i className="fas fa-coins text-orange-500"></i></span>
+                  <span className="pl-4">
+                    <span className="underline decoration-orange-500" >ฟรี</span>
+                      <span>ค่าโอนตามราคาบ้าน</span>
+                    </span>
                 </li>
-                <li className="flex flex-row">
-                  <span className="text-4xl"><i className="fas fa-percentage"></i></span>
-                  <span className="pl-4">ฟรีค่าภาษีตามราคาบ้าน</span>
+                <li className="flex flex-row pb-3">
+                  <span className="text-4xl"><i className="fas fa-percentage text-orange-500"></i></span>
+                  <span className="pl-5">
+                    <span className="underline decoration-orange-500" >ฟรี</span>
+                    <span>ค่าภาษีตามราคาบ้าน</span>
+                    </span>
                 </li>
-                <li className="flex flex-row">
-                  <span className="text-4xl"><i className="fas fa-file-invoice-dollar"></i></span>
-                  <span className="pl-4">ฟรีค่าจดจำนอง</span>
+                <li className="flex flex-row pb-3">
+                  <span className="text-4xl"><i className="fas fa-file-invoice-dollar text-orange-500"></i></span>
+                  <span className="pl-6">
+                  <span className="underline decoration-orange-500" >ฟรี</span>
+                    <span>ค่าจดจำนอง</span>
+                  </span>
                 </li>
-                <li>
-                  <span className="text-4xl"><i className="fa-solid fa-shower"></i></span>
-                  <span className="pl-4">ฟรีเครื่องทำน้ำอุ่น 2 ตัว</span>
+                <li className="flex flex-row pb-3">
+                  <span className="text-4xl"><i className="fa-solid fa-shower text-orange-500"></i></span>
+                  <span className="pl-4">
+                  <span className="underline decoration-orange-500" >ฟรี</span>
+                    <span>เครื่องทำน้ำอุ่น 2 ตัว</span>
+                  </span>
                 </li>
-                <li>
-                  <span className="text-4xl"><i className="fa-solid fa-car-side"></i></span>
-                  <span className="pl-3">ฟรีปูกระเบื้องโรงจอดรถ</span>
+                <li className="flex flex-row pb-3">
+                  <span className="text-4xl"><i className="fa-solid fa-car-side text-orange-500"></i></span>
+                  <span className="pl-1">
+                  <span className="underline decoration-orange-500" >ฟรี</span>
+                  <span>ปูกระเบื้องโรงจอดรถ</span>
+                  </span>
                 </li>
-                <li>
-                  <span className="text-4xl"><i className="fa-solid fa-kitchen-set"></i></span>
-                  <span className="pl-3">ฟรีก่อซิงค์ครัวพร้อมปูกระเบื้อง</span>
+                <li className="flex flex-row pb-3"> 
+                  <span className="text-4xl"><i className="fa-solid fa-kitchen-set text-orange-500"></i></span>
+                  <span className="pl-3">
+                  <span className="underline decoration-orange-500" >ฟรี</span>
+                    <span>ก่อซิงค์ครัวพร้อมปูกระเบื้อง</span>
+                  </span>
                 </li>
-                <li>
-                  <span className="text-4xl"><i className="fa-solid fa-bolt"></i></span>
-                  <span className="pl-7">ฟรีมิเตอร์ไฟฟ้า</span>
+                <li className="flex flex-row pb-3">
+                  <span className="text-4xl"><i className="fa-solid fa-bolt text-orange-500"></i></span>
+                  <span className="pl-7">
+                  <span className="underline decoration-orange-500" >ฟรี</span>
+                    <span>มิเตอร์ไฟฟ้า</span>
+                  </span>
                 </li>
-                <li>
-                  <span className="text-4xl"><i className="fa-solid fa-droplet"></i></span>
-                  <span className="pl-7">ฟรีมิเตอร์น้ำ</span>
+                <li className="flex flex-row pb-3">
+                  <span className="text-4xl"><i className="fa-solid fa-droplet text-orange-500"></i></span>
+                  <span className="pl-7">
+                  <span className="underline decoration-orange-500" >ฟรี</span>
+                    <span>มิเตอร์น้ำ</span>
+                  </span>
                 </li>
-                <li>
-                  <span className="text-4xl"><i className="fa-solid fa-magnifying-glass"></i></span>
-                  <span className="pl-5">ฟรีค่าประเมิน</span>
+                <li className="flex flex-row pb-3">
+                  <span className="text-4xl"><i className="fa-solid fa-magnifying-glass text-orange-500"></i></span>
+                  <span className="pl-5">
+                  <span className="underline decoration-orange-500" >ฟรี</span>
+                    <span>ค่าประเมิน</span>
+                  </span>
                 </li>
               </ul>
             </div>
@@ -186,32 +224,28 @@ const Home = () => {
       {/* END OUR PROJECT : 03 PAGES */}
 
       {/* FACILITIES */}
-      <div className="section bg-blue-200">
-        <div className="section-title">Facilities</div>
-        <div className="section-subtitle">
-          Exlore our rich and diverse portfolio
+      <div className="section pb-12 bg-blue-200">
+        <div className="section-title">FACILITES</div>
+        <div className="section-subtitle text-xl">
+          สิ่งอำนวยความสะดวกและการบริการข้อมูลที่ครบครัน 
         </div>
         <div className="flex justify-center flex-wrap">
           <div className="card-Facilities">
-            <img src={result[23]} className="card-image " alt="" />
-            <p className="card-Facilitie">MM</p>
-            <p className="card-Facilitie-sub">UI Design</p>
+            <img src={result[23]} className="card-image" alt="" />
+            <p className="card-Facilitie">DESIGN</p>
           </div>
 
           <div className="card-Facilities">
             <img src={result[22]} className="card-image " alt="" />
-            <p className="card-Facilitie">MM</p>
-            <p className="card-Facilitie-sub">UI Design</p>
+            <p className="card-Facilitie">FAMILY</p>
           </div>
           <div className="card-Facilities">
             <img src={result[24]} className="card-image " alt="" />
-            <p className="card-Facilitie">MM</p>
-            <p className="card-Facilitie-sub">UI Design</p>
+            <p className="card-Facilitie">SERVICE</p>
           </div>
           <div className="card-Facilities">
             <img src={result[21]} className="card-image " alt="" />
-            <p className="card-Facilitie">MM</p>
-            <p className="card-Facilitie-sub">UI Design</p>
+            <p className="card-Facilitie">SECURITY</p>
           </div>
         </div>
       </div>

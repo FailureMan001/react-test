@@ -35,7 +35,7 @@
 }
 
 .card-icons {
-    @apply flex justify-center items-center mt-2;
+    @apply flex justify-center items-center mt-2 ;
 }
 
 .card-image {
@@ -44,9 +44,11 @@
 
 .card-Facilities{
     @apply 
-        w-48 
+        w-28
+        h-28
         m-4 
         py-2 
+        rounded-full
         drop-shadow-lg
         bg-white
 }
