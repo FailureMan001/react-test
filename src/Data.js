@@ -1,3 +1,6 @@
+// LOGO
+import logo0 from './assets/image/logo01.jpg';
+
 // Icons
 import icon0 from './assets/image/cctv.png';
 import icon1 from './assets/image/family.png';
@@ -112,6 +115,10 @@ import home04 from './assets/image/home04.jpg';
 
 // Background : sales manager
 import sales01 from './assets/image/saler01.jpg'
+
+export const logoData = [
+    {id:1, image:logo0},
+]
 
 export const imageData = [
     {
@@ -248,36 +255,36 @@ export const aroundData = [
 ]
 
 export const insideData = [
-    {id:1, iamge:inside01},
-    {id:2, iamge:inside02},
-    {id:3, iamge:inside03},
-    {id:4, iamge:inside04},
-    {id:5, iamge:inside05},
-    {id:6, iamge:inside06},
-    {id:7, iamge:inside07},
-    {id:8, iamge:inside08},
-    {id:9, iamge:inside09},
-    {id:10, iamge:inside10},
-    {id:11, iamge:inside11},
-    {id:12, iamge:inside12},
-    {id:13, iamge:inside13},
-    {id:14, iamge:inside14},
-    {id:15, iamge:inside15},
-    {id:16, iamge:inside16},
-    {id:17, iamge:inside17},
-    {id:18, iamge:inside18},
-    {id:19, iamge:inside19},
-    {id:20, iamge:inside20},
-    {id:21, iamge:inside21},
-    {id:22, iamge:inside22},
-    {id:23, iamge:inside23},
-    {id:24, iamge:inside24},
-    {id:25, iamge:inside25},
-    {id:26, iamge:inside26},
-    {id:27, iamge:inside27},
-    {id:28, iamge:inside28},
-    {id:29, iamge:inside29},
-    {id:30, iamge:inside30},
+    {id:1, image:inside01},
+    {id:2, image:inside02},
+    {id:3, image:inside03},
+    {id:4, image:inside04},
+    {id:5, image:inside05},
+    {id:6, image:inside06},
+    {id:7, image:inside07},
+    {id:8, image:inside08},
+    {id:9, image:inside09},
+    {id:10, image:inside10},
+    {id:11, image:inside11},
+    {id:12, image:inside12},
+    {id:13, image:inside13},
+    {id:14, image:inside14},
+    {id:15, image:inside15},
+    {id:16, image:inside16},
+    {id:17, image:inside17},
+    {id:18, image:inside18},
+    {id:19, image:inside19},
+    {id:20, image:inside20},
+    {id:21, image:inside21},
+    {id:22, image:inside22},
+    {id:23, image:inside23},
+    {id:24, image:inside24},
+    {id:25, image:inside25},
+    {id:26, image:inside26},
+    {id:27, image:inside27},
+    {id:28, image:inside28},
+    {id:29, image:inside29},
+    {id:30, image:inside30},
 ]
 
 export const toiletData = [

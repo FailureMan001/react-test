@@ -46,11 +46,11 @@ const Contact = () => {
     <div className="container mx-auto -mt-3">
       {/* CONTACT US */}
       <div className="section bg-blue-100">
-        <div className="section-title">CONTACT US</div>
-        <div className="section-subtitle">
-          Exlore our rich and diverse portfolioExlore our rich and diverse
-          portfolioExlore our rich and diverse portfolioExlore our rich and
-          diverse portfolioExlore our rich and diverse portfolio
+        <div className="section-title">ติดต่อเรา</div>
+        <div className="section-subtitle text-xl">
+          <span>สิ้นสุดการเดินทางมาถึงขั้นตอนสุดท้าย สำหรับลูกค้าที่ต้องการซื้อบ้าน</span>
+          <span> โครงการวราพร็อพเพ้อตี้ บ้านที่เหมาะสมกับราคาที่ต้องจ่าย</span>
+          <span>ติดต่อผู้จัดการฝ่ายขายได้ที่นี้</span>
         </div>
       </div>
 
@@ -71,12 +71,11 @@ const Contact = () => {
               <div className="container px-5 py-1 mx-auto">
                 <div className="flex flex-col text-center w-full mb-12">
                   <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                    Contact Us
+                    EMAIL US
                   </h1>
-                  <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                    Whatever cardigan tote bag tumblr hexagon brooklyn
-                    asymmetrical gentrify.
-                  </p>
+                  <div className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                   <span>หรือต้องการติดต่อผ่านทาง EMAIL</span> 
+                  </div>
                 </div>
                 <div className="lg:w-1/2 md:w-2/3 mx-auto">
                   <div className="flex flex-wrap -m-2">
@@ -133,9 +132,9 @@ const Contact = () => {
                     <div className="p-2 w-full">
                       <button
                         type="submit"
-                        className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                        className="flex mx-auto text-white bg-blue-900 border-0 py-2 px-8 focus:outline-none hover:bg-orange-500 rounded text-lg"
                       >
-                        Button
+                        SUBMIT
                       </button>
                     </div>
                   </div>

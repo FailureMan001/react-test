@@ -7,7 +7,7 @@ import {ImageContext} from "../ImageContext";
 import "../layout/about.css";
 
 // *import : Slider Of About
-import SliderOfAbout from "../layout/SliderOfAbout";
+// import SliderOfAbout from "../layout/SliderOfAbout";
 
 const About = () => {
   const data = useContext(ImageContext);
@@ -88,14 +88,14 @@ const About = () => {
       </div>
 
       {/* IMAGE SWIPER */}
-      <div className="section bg-blue-200">
+      {/* <div className="section bg-blue-200">
         
         <div className="section-title">Facilities</div>
         <div className="section-subtitle">
           Exlore our rich and diverse portfolio
         </div>
         <SliderOfAbout/>
-      </div>
+      </div> */}
       {/* END IMAGE SWIPER */}
 
     </div>

@@ -1,11 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import {Link} from 'react-router-dom'
+
+import {ImageContext} from '../ImageContext';
 
 import '../layout/header.css';
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [stickyClass, setStickyClass] = useState('');
+  const data = useContext(ImageContext)
+  const result = data.logoData.map((e)=>{
+    return e.image
+  })
 
   useEffect(() => {
     window.addEventListener('scroll', stickNavbar);
@@ -27,9 +33,16 @@ const Header = () => {
       <nav className={`navbar ${stickyClass}`}>
         <div className='navbar-two'>
           <div className='navbar-svg'>
-            <i className="fa-solid fa-compass-drafting fa-2x text-orange-500 ">
-              <a href='/' className='' >VARA HOME</a>
-            </i>
+            {/* <i className="fa-solid fa-compass-drafting fa-2x text-orange-500 ">
+            </i> */}
+            <div className="flex items-center justify-center">
+              <span>
+                <img src={result[0]} className='pb-1 w-12 h-12 rounded-full' alt=""/>
+              </span>
+              <span>
+                <Link to='/' className='pl-3 text-yellow-400 text-2xl' >VARA HOME</Link>
+              </span>
+            </div>
             <button
               className="button-bar"
               type="button"

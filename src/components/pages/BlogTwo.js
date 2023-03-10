@@ -6,10 +6,14 @@ import { ImageContext } from "../ImageContext";
 
 //* import : image zoom CSS
 import "../layout/blog.css";
+import SliderOfView from '../layout/SliderOfView';
 
 const BlogTwo = () => {
   const data = useContext(ImageContext)
-  const result = data.imageData.map((e)=>{
+  const result = data.aroundData.map((e)=>{
+    return e.image
+  })
+  const resultTwo = data.imageData.map((e)=>{
     return e.image
   })
 
@@ -21,27 +25,13 @@ const BlogTwo = () => {
   return (
     <div className="container mx-auto -mt-3">
     <div className="section bg-blue-100">
-      <div className="section-title">KITCHEN ROOM</div>
-      <div className="section-subtitle">
-        Exlore our rich and diverse portfolio
-      </div>
+      <div className="section-title">ธรรมชาติ</div>
       <div className="flex items-center justify-center bg-blue-100">
-        <img src={result[19]} alt="" className="shadow-xl" />
-      </div>
-
-      <div className="">
-        <p className="text-2xl">
-          <br />
-          Laboris in eiusmod non eu do irure enim adipisicing. Non in non
-          nostrud do ea laboris fugiat ut proident cupidatat consectetur
-          eiusmod dolor. Fugiat minim fugiat tempor ea Lorem. Irure consequat
-          do labore laboris laboris minim do nulla.
-        </p>
-        <br />
+        <SliderOfView/>
       </div>
     </div>
     <div className="section bg-blue-200 border-t-4 border-orange-500">
-      <div className="section-title">Anathor</div>
+      <div className="section-title">ANATHOR</div>
       <div className="section-subtitle">
         Exlore our rich and diverse portfolio
       </div>
@@ -52,20 +42,20 @@ const BlogTwo = () => {
             <div className="rounded overflow-hidden shadow-lg">
               <Link to="/blog-01" className="card-zoom">
                 <img
-                  src={result[18]}
+                  src={result[0]}
                   alt="Home"
                   className="card-zoom-image bg-beetle"
                 />
               </Link>
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer">
-                  <Link to="/blog-01">Luxury Room</Link>
+                  <Link to="/blog-01">วราโฮมวิลล์</Link>
                 </div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, Nonea! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
+                <div className="text-gray-700 text-base">
+                <span>โครงการวราโฮมวิลล์ นิคมพัฒนา - ระยอง</span>
+                  <span>พร้อมจบครับปัญหาครอบครัว ใส่ใจทุกรายละเอียดในการก่อสร้าง</span>
+                  <span>ทำเลทองเหมาะแก่การเดินทาง ตัวบ้านหรูหราไม่แพ้ใคร</span>
+                </div>
               </div>
               <div className="px-6 pt-4 pb-2">
                 <span className="inline-block hover:-mt-1 bg-orange-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">
@@ -77,20 +67,20 @@ const BlogTwo = () => {
             <div className="rounded overflow-hidden shadow-lg">
               <Link to="/blog-03" className="card-zoom">
                 <img
-                  src={result[20]}
+                  src={resultTwo[13]}
                   alt="Home"
                   className="card-zoom-image bg-beetle"
                 />
               </Link>
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 hover:text-orange-400 cursor-pointer">
-                  <Link to="/blog-03">Minimal Room</Link>
+                  <Link to="/blog-03">การก่อสร้าง</Link>
                 </div>
-                <p className="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptatibus quia, Nonea! Maiores et perferendis eaque,
-                  exercitationem praesentium nihil.
-                </p>
+                <div className="text-gray-700 text-base">
+                <span>รายละเอียดที่อยากให้ท่านชมว่า วราโฮมวิลล์ของเรา</span>
+                  <span>ใส่ใจและลงรายละเอียดของการสร้างมากพอที่</span>
+                  <span> จะอยู่ได้โดยไม่มีปัญหามากวนใจ</span>
+                </div>
               </div>
               <div className="px-6 pt-4 pb-2">
                 <span className="inline-block hover:-mt-1 bg-orange-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">

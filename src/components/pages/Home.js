@@ -40,14 +40,14 @@ const Home = () => {
         <div className="relative mx-auto lg:top-9 lg:-left-[18rem]">
           <div className="flex items-center top-5 w-[350px] h-[350px] bg-blue-900 bg-opacity-75">
             <div className="w-full p-6">
-              <div className=" w-48 mx-auto pt-6 border-b-2 border-orange-500  text-center text-2xl text-blue-200 ">
+              <div className=" w-48 mx-auto pt-6 border-b-2 border-orange-500  text-center text-4xl text-blue-200 ">
                 <span className="font-link">
                   ราคาเริ่มต้น
                   <br />
                   2.xxลบ.
                 </span>
               </div>
-              <div className="p-2 text-center text-lg text-gray-200 font-link">
+              <div className="p-2 text-center text-4xl text-gray-200 font-link">
                 จองเพียง
                 <br />
                 999 บ.
@@ -115,7 +115,7 @@ const Home = () => {
               style={{
                 backgroundImage: `url(${resultTwo[1]})`,
                 backgroundRepeat: "no-repeat",
-                backgroundSize:"380px 450px",
+                backgroundSize:"300px 450px",
               }}
             ></div>
           </div>

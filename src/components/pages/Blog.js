@@ -8,8 +8,16 @@ import { ImageContext } from "../ImageContext";
 import "../layout/blog.css";
 
 const Blog = () => {
-  const data = useContext(ImageContext);
-  const result = data.imageData.map((Element) => {
+  const dataOne = useContext(ImageContext);
+  const dataTwo = useContext(ImageContext);
+  const dataThree = useContext(ImageContext);
+  const resultOne = dataOne.aroundData.map((Element) => {
+    return Element.image;
+  });
+  const resultTwo = dataTwo.viewData.map((Element) => {
+    return Element.image;
+  });
+  const resultThree = dataThree.imageData.map((Element) => {
     return Element.image;
   });
 
@@ -37,7 +45,7 @@ const Blog = () => {
                 className="card-zoom"
               >
                 <img
-                  src={result[18]}
+                  src={resultOne[0]}
                   alt="Home"
                   className="card-zoom-image bg-beetle"
                 />
@@ -70,7 +78,7 @@ const Blog = () => {
                 className="card-zoom"
               >
                 <img
-                  src={result[19]}
+                  src={resultTwo[0]}
                   alt="Home"
                   className="card-zoom-image bg-beetle"
                 />
@@ -103,7 +111,7 @@ const Blog = () => {
                 className="card-zoom"
               >
                 <img
-                  src={result[20]}
+                  src={resultThree[13]}
                   alt="Home"
                   className="card-zoom-image bg-beetle"
                 />
