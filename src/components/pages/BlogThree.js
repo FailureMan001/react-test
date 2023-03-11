@@ -38,7 +38,7 @@ const BlogThree = () => {
       <div className="section bg-blue-200 border-t-4 border-orange-500">
         <div className="section-title">Anathor</div>
         <div className="section-subtitle">
-          Exlore our rich and diverse portfolio
+          <span>สามารถดูรายละเอียดเพิ่มเติ่มด้านล่างนี้</span>
         </div>
         <div className="w-full bg-blue-200">
           <div className="flex flex-wrap text-center text-white">
