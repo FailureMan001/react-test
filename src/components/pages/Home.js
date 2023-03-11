@@ -42,9 +42,9 @@ const Home = () => {
             <div className="w-full p-6">
               <div className=" w-48 mx-auto pt-6 border-b-2 border-orange-500  text-center text-4xl text-blue-200 ">
                 <span className="font-link">
-                  ราคาเริ่มต้น
+                  <span className=" text-4xl">ราคาเริ่มต้น</span>
                   <br />
-                  2.xxลบ.
+                  2.xx ลบ.
                 </span>
               </div>
               <div className="p-2 text-center text-4xl text-gray-200 font-link">
