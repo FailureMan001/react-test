@@ -19,6 +19,7 @@ const SliderOfToilet = () => {
     const result = data.toiletData.map((Element) => {
       return Element.image;
     });
+    
   return (
     <>
     <Swiper

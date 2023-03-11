@@ -50,7 +50,8 @@ const Home = () => {
               <div className="p-2 text-center text-4xl text-gray-200 font-link">
                 จองเพียง
                 <br />
-                999 บ.
+                <span className="text-orange-500 text-6xl">9 9 9</span>
+                <span> บ.</span>
               </div>
             </div>
           </div>

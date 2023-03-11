@@ -8,7 +8,7 @@ import { ImageContext } from "../ImageContext";
 import "../layout/blog.css";
 
 //* import : swiper slider
-import SliderOfBlogOne from '../layout/SliderOfBlogOne';
+import SliderOfOutsite from '../layout/SliderOfOutsite';
 import SliderOfInside from '../layout/SliderOfInside';
 import SliderOfToilet from '../layout/SliderOfToilet';
 
@@ -36,7 +36,7 @@ const BlogOne = () => {
           OUTSITE
         </div>
         <div className="flex items-center justify-center pb-5 bg-blue-100">
-          <SliderOfBlogOne/>
+          <SliderOfOutsite/>
         </div>
         <div className="flex items-center justify-center pb-5 bg-blue-100">
         </div>

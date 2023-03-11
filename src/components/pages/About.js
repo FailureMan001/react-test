@@ -14,6 +14,9 @@ const About = () => {
   const result = data.imageData.map((Element) => {
     return Element.image;
   });
+  const resultOne = data.homeData.map((Element) => {
+    return Element.image;
+  });
 
   useEffect(() => {
     // 👇️ scroll to top on page load
@@ -29,7 +32,7 @@ const About = () => {
           สิ่งแวดล้อมดี สังคมดี ชีวิตดี
         </div>
       </div>
-
+        {/* BOX : 01 */}
       <div className="w-full bg-blue-200">
         <div className="flex flex-wrap text-center text-white">
           {/* About Column */}
@@ -49,7 +52,7 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      {/* BOX : 02 */}
       <div className="w-full bg-blue-200">
         <div className="flex flex-wrap text-center text-white">
           {/* About Column */}
@@ -67,7 +70,7 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      {/* BOX : 03 */}
       <div className="w-full bg-blue-200">
         <div className="flex flex-wrap text-center text-white">
           {/* About Column */}
@@ -86,6 +89,26 @@ const About = () => {
           </div>
         </div>
       </div>
+      {/* BOX : 04 */}
+      <div className="w-full bg-blue-200">
+        <div className="flex flex-wrap text-center text-white">
+          <div className="flex justify-center w-full md:w-1/2 p-5 border-r border-blue-800">
+            <img src={resultOne[0]} alt="" />
+          </div>
+          <div className="flex justify-center w-full md:w-1/2 p-5 border-r border-orange-500">
+            <img src={resultOne[1]} alt="" />
+          </div>
+        </div>
+      </div>
+      {/* BOX : 05 */}
+      <div className="w-full bg-blue-200">
+        <div className="flex flex-wrap text-center text-white">
+          <div className="flex justify-center w-full p-5 border-r border-blue-800">
+            <img src={resultOne[2]} className='w-[599px] h-[599px]' alt="" />
+          </div>
+        </div>
+      </div>
+      
 
       {/* IMAGE SWIPER */}
       {/* <div className="section bg-blue-200">
