@@ -57,9 +57,14 @@ const About = () => {
         <div className="flex flex-wrap text-center text-white">
           {/* About Column */}
           <div className="w-full md:w-1/2 p-5 border-r border-blue-800 md:text-left">
-            <h1 className="my-6 ml-3 text-[100px] font-semibold">01</h1>
+            <h1 className="my-6 ml-3 text-[100px] font-semibold">TYPE A</h1>
 
             <div className="p-3 text-gray-900 text-2xl">
+              <span>TYPE A ประเภทของบ้าน </span>
+              <span>ออกแบบมมาให้มีพื้นที่หน้าบ้านสำหรับนั่งเล่นพักผ่อนหย่อนใจ </span>
+              <span>ตกแต่งให้สามารถมองเห็นหน้าบ้านได้เต็มมุม ของตัวบ้าน </span>
+              <span>จากภายในและภายนอก และสามารถเปิดกระจกเพื่อรับลมได้เต็มบาน</span>
+              <br/>
               <span>INSIDE ภายในที่มีพื้นที่กว้างขวางให้ได้ตกแต่งได้ตามต้องการ</span>
               <span>เช่น Modern Style - โมเดิร์น สไตล์ คลุมโทนให้เข้ากับสีพื้นของตัวบ้าน</span>
             </div>
@@ -79,10 +84,14 @@ const About = () => {
           </div>
           {/* About Column */}
           <div className="w-full md:w-1/2 p-5 border-r border-blue-800 md:text-left">
-            <h1 className="my-6 ml-3 text-[100px] font-semibold">02</h1>
+            <h1 className="my-6 ml-3 text-[100px] font-semibold">TYPE B</h1>
 
             <div className="p-3 text-gray-900 text-2xl">
-              <span>ถัดมามุมตัวของห้องนั่งเล่น ตกแต่งได้แบบ Monotone style</span>
+              <span>TYPE B ประเภทของบ้านที่ตกแต่งภายในบ้านให้มีพื้นที่ใช้สอยที่กว้างขวาง </span>
+              <span>ทำให้มีพื้นที่จัดวางและตกแต่งได้ตามความต้องการที่มากขึ้น </span>
+              <span>ภายนอกตัวบ้านตกแต่งให้เรียบง่ายดูหรูหรามีสไตล์ ลูกเล่น</span>
+              <span>ของบ้านนี้จึงตกไปอยู่ด้านในที่สามารถรังสรรค์ได้ตามต้องการ</span>
+              <span> ถัดมามุมตัวของห้องนั่งเล่น ตกแต่งได้แบบ Monotone style</span>
               <span> - สไตร์โมโนโทน เพื่อรักษาอารมณ์ความต่อเนื่องและบรรยากาศ</span>
               <span>ของบ้านโดยสีที่ใช้ทำให้คลุมโทนเข้ากับตัวบ้านได้ดี</span>
             </div>
@@ -103,11 +112,15 @@ const About = () => {
       {/* BOX : 05 */}
       <div className="w-full bg-blue-200">
         <div className="flex flex-wrap text-center text-white">
-          <div className="flex justify-center w-full p-5 border-r border-blue-800">
-            <img src={resultOne[2]} className='w-[599px] h-[599px]' alt="" />
+          <div className="flex justify-center w-full md:w-1/2 p-5 border-r border-blue-800">
+            <img src={resultOne[2]} alt="" />
+          </div>
+          <div className="flex justify-center w-full md:w-1/2 p-5 border-r border-orange-500">
+            <img src={resultOne[3]} alt="" />
           </div>
         </div>
       </div>
+      
       
 
       {/* IMAGE SWIPER */}
