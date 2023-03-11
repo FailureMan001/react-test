@@ -45,7 +45,7 @@ const Home = () => {
                   <span className=" text-4xl">ราคาเริ่มต้น</span>
                   <br />
                   <br />
-                  <span className="text-orange-500">2.xx </span>
+                  <span className="text-orange-500 text-6xl">2.xx </span>
                   <span>ลบ.</span>
                 </span>
               </div>
