@@ -44,12 +44,14 @@ const Home = () => {
                 <span className="font-link">
                   <span className=" text-4xl">ราคาเริ่มต้น</span>
                   <br />
+                  <br />
                   <span className="text-orange-500">2.xx </span>
                   <span>ลบ.</span>
                 </span>
               </div>
               <div className="p-2 text-center text-4xl text-gray-200 font-link">
                 จองเพียง
+                <br />
                 <br />
                 <span className="text-orange-500 text-6xl">9 9 9</span>
                 <span> บ.</span>
