@@ -36,7 +36,7 @@ const BlogThree = () => {
         
       </div>
       <div className="section bg-blue-200 border-t-4 border-orange-500">
-        <div className="section-title">Anathor</div>
+        <div className="section-title">ANOTHER</div>
         <div className="section-subtitle">
           <span>สามารถดูรายละเอียดเพิ่มเติ่มด้านล่างนี้</span>
         </div>
