@@ -39,14 +39,14 @@ const Home = () => {
       >
         <div className="relative mx-auto lg:top-9 lg:-left-[18rem]">
           <div className="flex items-center top-5 w-[350px] h-[350px] bg-blue-900 bg-opacity-75">
-            <div className="w-full p-6">
+            <div className="w-full p-6 ">
               <div className=" w-48 mx-auto pt-6 border-b-2 border-orange-500  text-center text-4xl text-white ">
                 <span className="font-link">
                   <span className=" text-4xl">ราคาเริ่มต้น</span>
                   <br />
                   <br />
                   <span className="text-orange-500 text-6xl">2.xx </span>
-                  <span>ลบ.</span>
+                  <span className="">ลบ.</span>
                 </span>
               </div>
               <div className="p-2 text-center text-4xl text-gray-200 font-link">
