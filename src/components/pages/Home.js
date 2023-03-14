@@ -21,6 +21,10 @@ const Home = () => {
     return Element.image
   })
   
+  const resultThree = data.viewData.map((Element)=>{
+    return Element.image
+  })
+  
   useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -32,7 +36,7 @@ const Home = () => {
       <div
         className="flex lg:pt-[200px] lg:pb-[200px] bg-blue-100 bg-fixed"
         style={{
-          backgroundImage: `url(${result[7]})`,
+          backgroundImage: `url(${resultThree[0]})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "100% 100%",
         }}
